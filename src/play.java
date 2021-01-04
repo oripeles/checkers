@@ -8,7 +8,7 @@
  *
  * @author lee
  */
-public class soldier extends piece{
+public class play{
     
     
 }

@@ -12,16 +12,16 @@ public class piece {
 
     public piece(type type) {
 
-        this.type=type;
+        this.type=type;/*
         if (type == type.white) {
-            color = -1;
+        color = -1;
         } else {
-            color = 1;
-        }
+        color = 1;
+        }*/
     }
 
     private type type;//עדיף לאתחל את זה בפרטי
-    private int color = 1;
+    public int color = 1;
 
    
     public type getType() {
@@ -33,25 +33,7 @@ public class piece {
         this.type = type;
     }
 
-    public void print() {
-        switch (type) {
-            case empty:
-                System.out.println(1);
 
-            case black:
-                System.out.println(9);
-
-            case white:
-                System.out.println("*");
-
-        }
-    }
-
-    private static class matrix {
-
-        public matrix() {
-        }
-    }
 }
 
 enum type {//משתנים קבועים בלתי אפשריים לשינוי
@@ -59,6 +41,8 @@ enum type {//משתנים קבועים בלתי אפשריים לשינוי
     black,
     white,
     kingblack,
-    kingwhite,
+    kingwhite
+    
 
 }
+  

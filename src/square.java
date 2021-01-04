@@ -10,7 +10,9 @@
  */
 public class square {
     
-
+    private boolean used;
+    private piece mypiece; 
+    
     public square(boolean used,piece mypiece) {
         this.used = used;
         this.mypiece=mypiece;
@@ -21,8 +23,6 @@ public class square {
         this.mypiece=null;
     }
     
-    private boolean used;
-    private piece mypiece; 
     public square() {
     }
 
@@ -32,6 +32,10 @@ public class square {
 
     public void setUsed(boolean used) {
         this.used = used;
+    }
+    
+    public boolean getUsed() {
+        return used;
     }
 
     public piece getMypiece() {
@@ -44,5 +48,12 @@ public class square {
     public type getpieceType(){
     return mypiece.getType();
     }
-    
+
+    void setTypePiece(type type) {
+        this.mypiece.setType(type);
+    }
+
+
+
+  
 }

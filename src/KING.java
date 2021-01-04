@@ -10,5 +10,9 @@
  */
 public class KING extends piece{
     
+    public KING(type type) {
+        super(type);
+    }
+    
     
 }
