@@ -12,16 +12,11 @@ public class piece {
 
     public piece(type type) {
 
-        this.type=type;/*
-        if (type == type.white) {
-        color = -1;
-        } else {
-        color = 1;
-        }*/
+        this.type=type;
     }
 
     private type type;//עדיף לאתחל את זה בפרטי
-    public int color = 1;
+    
 
    
     public type getType() {
@@ -37,11 +32,11 @@ public class piece {
 }
 
 enum type {//משתנים קבועים בלתי אפשריים לשינוי
-    empty,
     black,
     white,
     kingblack,
-    kingwhite
+    kingwhite,
+    e
     
 
 }

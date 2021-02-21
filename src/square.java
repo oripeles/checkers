@@ -46,6 +46,9 @@ public class square {
         this.mypiece = mypiece;
     }
     public type getpieceType(){
+    if(mypiece==null){
+    return type.e;//to do solve for print
+    }
     return mypiece.getType();
     }
 
